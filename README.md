@@ -23,10 +23,10 @@ heroku ps
 heroku logs
 
 if your process dies you many need to restart:
-heroku ps:web.1 restart
+heroku web.1 restart
 
 if you want to stop the process:
-heroku ps:web.1 stop
+heroku web.1 stop
 
 Thanks!
 Mike Newell
