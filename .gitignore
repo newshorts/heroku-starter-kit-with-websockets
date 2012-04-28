@@ -1,0 +1,2 @@
+# so node doesn't get tracked with git
+node_modules

@@ -1,0 +1,245 @@
+/* 
+    Document   : style
+    Created on : Mar 30, 2012, 9:48:29 AM
+    Author     : mike_newell
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Bevan);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:baseline
+}
+
+body, * {
+    font-family: 'Bevan', serif;
+    font-size: 18.5px;
+    font-weight: 400;
+    color: #444;
+}
+
+h1 {
+    font-size: 48.5px;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    text-shadow: 0px 2px 3px #ccc;
+    margin: 50px auto 20px;
+}
+
+h2 {
+    font-size: 42.5px;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    text-shadow: 0px 2px 3px #ccc;
+    margin: 0 auto;
+}
+
+h3 {
+	font-size: 28.5px;
+}
+
+h4 {
+	font-size: 24.5px;
+}
+
+p {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+/*******************************************************************************
+                                    LAYOUT
+*******************************************************************************/
+
+#wrap {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+}
+
+#wrap h1 {
+    text-align: center;
+    color: #666;
+/*    font-family: futura, serif;*/
+/*    font-size: 18px;*/
+}
+
+#controls-container {
+    width: 984px;
+    height: 712px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#controls {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: none;
+    border: 1px dotted red;
+    
+    z-index: 10;
+}
+
+#spray-paint {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/spray_984x712.png) scroll no-repeat;
+    z-index: 3
+}
+
+
+
+#crosshair {
+    position: absolute;
+/*    display: none;*/
+    width: 200px;
+    height: 196px;
+    background: url(../images/cross_128x128.png) scroll no-repeat;
+    z-index: 5
+}
+
+/*.arrow {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background: url(../images/arrow_128x128.png) scroll no-repeat;
+    display: block;
+}
+
+.arrow:hover {
+    background: url(../images/arrow-active_128x128.png) scroll no-repeat;
+}*/
+
+.gDot {
+    position: absolute;
+    background-color: #00FF33;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+    
+}
+
+/*#top {
+    top: 0;
+    left: 128px;
+    
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+}
+
+#right {
+    top: 128px;
+    left: 256px;
+    
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+}
+
+#bottom {
+    top: 256px;
+    left: 128px;
+    
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+}
+
+#left {
+    top: 128px;
+    left: 0;
+}
+
+#top:active {top: 3px;}
+#right:active {left: 253px;}
+#bottom:active {top: 253px}
+#left:active {left: 3px}*/
+
+#log {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    border: 1px solid #f1f1f1;
+}
+
+#log h2 {
+	text-align: center;
+}
+
+#log p {
+	text-align: center;
+	border-bottom: 1px solid #f1f1f1;
+	color: #999;
+	padding: 10px 0;
+}
+
+#close {
+    float: right;
+}
+
+/*******************************************************************************
+                                TABLES STYLES
+*******************************************************************************/
+
+table {
+    font-size: 18.5px;
+}
+
+tr {
+    border-top: 1px solid #f1f1f1;
+}
+
+tr:last-child {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.client > td {
+    font-size: 18.5px;
+    font-family: Arial, serif;
+    color: #555;
+}
+
+td {
+    padding: 10px 40px;
+    text-align: left;
+    border-left: 1px solid #f1f1f1;
+}
+
+td:last-child {
+    border-right: 1px solid #f1f1f1;
+    text-align: center;
+}
